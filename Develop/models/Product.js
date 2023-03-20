@@ -12,11 +12,13 @@ Product.init(
       autoIncrement: true,
 
     },
+
     product_name: {
       type: DataTypes.STRING,
       allowNull: false,
 
     },
+
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false, 
@@ -24,7 +26,8 @@ Product.init(
         isDecimal: true
       }
 
-    }, 
+    },
+
     stock:{
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -34,6 +37,7 @@ Product.init(
       }
 
     },
+    
     category_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
@@ -50,7 +54,7 @@ Product.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'product',
-    
+
   }
 );
 
